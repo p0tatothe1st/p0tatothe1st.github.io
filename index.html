@@ -16,6 +16,7 @@
             transition: background-color 0.3s ease;
             margin: 0;
             padding: 0;
+            position: relative;
         }
 
         .container {
@@ -26,9 +27,20 @@
             border-radius: 10px;
         }
 
+        .donation-iframe-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
         .donate-button {
             display: block;
-            margin: 0 auto 20px;
+            margin: 20px auto;
             padding: 10px 20px;
             background-color: #29abe0;
             color: #fff;
@@ -87,8 +99,10 @@
 <body>
 
     <div class="container">
-        <!-- "Donate Me" Button -->
-        <a href="https://ko-fi.com/N4N3TW1P6" target="_blank" class="donate-button">Donate Me</a>
+        <!-- "Donate Me" Iframe -->
+        <div class="donation-iframe-container">
+            <iframe id='kofiframe' src='https://ko-fi.com/potatothe1st/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='potatothe1st'></iframe>
+        </div>
 
         <h1>Welcome to Minecraft CPM Skins</h1>
 
