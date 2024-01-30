@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft CPM Skins</title>
+    <!-- Add the favicon link below -->
+    <link rel="icon" href="https://github.com/p0tatothe1st/p0tatothe1st.github.io/blob/main/New%20Project%20(74).png?raw=true" type="image/png">
+    
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Comfortaa', cursive;
             background: url('https://github.com/p0tatothe1st/p0tatothe1st.github.io/blob/main/New%20Project%20(74).png?raw=true') center/cover no-repeat fixed;
             color: #fff;
+            transition: background-color 0.3s ease;
             margin: 0;
             padding: 0;
         }
@@ -22,41 +26,62 @@
             border-radius: 10px;
         }
 
-        .donate-button {
-            background-color: #29abe0;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 5px;
-            font-size: 1.2em;
-            margin-top: 10px;
+        .dark-mode-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 1; /* Ensure the toggle is above the background image */
+        }
+
+        .dark-mode-toggle span {
+            font-size: 20px;
         }
 
         .promotion {
             margin-bottom: 20px;
+            position: relative;
+            text-align: center;
         }
 
         .promotion img {
             max-width: 100%;
             border-radius: 5px;
             cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .promotion-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            box-sizing: border-box; /* Ensure padding and border are included in the width */
         }
 
         .promotion-name {
             font-size: 1.2em;
             margin-top: 10px;
             cursor: pointer;
-            color: #29abe0;
+            color: #fff;
             text-decoration: none;
         }
 
         .promotion-price {
             font-size: 1.1em;
             margin-top: 5px;
+            color: #fff;
         }
 
     </style>
+
+    <!-- Link to Comfortaa font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap">
 </head>
 
 <body>
@@ -68,16 +93,32 @@
         <div class="promotion">
             <a href="https://ko-fi.com/s/e56c3ec258" target="_blank">
                 <img src="https://storage.ko-fi.com/cdn/useruploads/display/cb6dea43-c8a8-4c7b-92fb-2d9e2db32e95_refine.png" alt="Buff Potato CPM Skin">
+                <div class="promotion-label">
+                    <p class="promotion-name">Buff Potato CPM Skin</p>
+                    <p class="promotion-price">$3 or more</p>
+                </div>
             </a>
-            <a href="https://ko-fi.com/s/e56c3ec258" target="_blank" class="promotion-name">Buff Potato CPM Skin</a>
-            <p class="promotion-price">$3 or more</p>
         </div>
 
         <!-- Add more promotions or content here -->
 
-        <!-- Donate Me Button -->
-        <a href="https://ko-fi.com/N4N3TW1P6" target="_blank" class="donate-button">Donate Me</a>
+        <!-- Ko-fi Widget -->
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+        <script type='text/javascript'>kofiwidget2.init('Buy my skins!', '#29abe0', 'N4N3TW1P6');kofiwidget2.draw();</script>
+
+        <!-- Dark mode toggle -->
+        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+            <span>🌙</span>
+        </div>
     </div>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+
+    </script>
 
 </body>
 
