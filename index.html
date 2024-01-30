@@ -26,16 +26,16 @@
             border-radius: 10px;
         }
 
-        .dark-mode-toggle {
-            position: absolute;
-            top: 20px;
-            right: 20px;
+        .donate-button {
+            display: block;
+            margin: 0 auto 20px;
+            padding: 10px 20px;
+            background-color: #29abe0;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
             cursor: pointer;
-            z-index: 1; /* Ensure the toggle is above the background image */
-        }
-
-        .dark-mode-toggle span {
-            font-size: 20px;
         }
 
         .promotion {
@@ -87,6 +87,9 @@
 <body>
 
     <div class="container">
+        <!-- "Donate Me" Button -->
+        <a href="https://ko-fi.com/N4N3TW1P6" target="_blank" class="donate-button">Donate Me</a>
+
         <h1>Welcome to Minecraft CPM Skins</h1>
 
         <!-- Promotion 1 -->
@@ -102,23 +105,7 @@
 
         <!-- Add more promotions or content here -->
 
-        <!-- Ko-fi Widget -->
-        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-        <script type='text/javascript'>kofiwidget2.init('Buy my skins!', '#29abe0', 'N4N3TW1P6');kofiwidget2.draw();</script>
-
-        <!-- Dark mode toggle -->
-        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
-            <span>🌙</span>
-        </div>
     </div>
-
-    <script>
-        function toggleDarkMode() {
-            const body = document.body;
-            body.classList.toggle("dark-mode");
-        }
-
-    </script>
 
 </body>
 
