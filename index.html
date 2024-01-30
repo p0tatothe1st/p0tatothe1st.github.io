@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft CPM Skins</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #282c35;
+            color: #fff;
+            transition: background-color 0.3s ease;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .dark-mode-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .dark-mode-toggle span {
+            font-size: 20px;
+        }
+
+        .promotion {
+            margin-bottom: 20px;
+        }
+
+        .promotion img {
+            max-width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .promotion-name {
+            font-size: 1.2em;
+            margin-top: 10px;
+            cursor: pointer;
+            color: #29abe0;
+            text-decoration: none;
+        }
+
+        .promotion-price {
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+
+        #website-image {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome to Minecraft CPM Skins</h1>
+
+        <!-- Website Image -->
+        <img id="website-image" src="https://github.com/p0tatothe1st/p0tatothe1st.github.io/blob/main/New%20Project%20(74).png?raw=true" alt="Website Image">
+
+        <!-- Promotion 1 -->
+        <div class="promotion">
+            <a href="https://ko-fi.com/s/e56c3ec258" target="_blank">
+                <img src="https://storage.ko-fi.com/cdn/useruploads/display/cb6dea43-c8a8-4c7b-92fb-2d9e2db32e95_refine.png" alt="Buff Potato CPM Skin">
+            </a>
+            <a href="https://ko-fi.com/s/e56c3ec258" target="_blank" class="promotion-name">Buff Potato CPM Skin</a>
+            <p class="promotion-price">$3 or more</p>
+        </div>
+
+        <!-- Add more promotions or content here -->
+
+        <!-- Ko-fi Widget -->
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+        <script type='text/javascript'>kofiwidget2.init('Buy my skins!', '#29abe0', 'N4N3TW1P6');kofiwidget2.draw();</script>
+
+        <!-- Dark mode toggle -->
+        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+            <span>🌙</span>
+        </div>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+
+    </script>
+
+</body>
+
+</html>
