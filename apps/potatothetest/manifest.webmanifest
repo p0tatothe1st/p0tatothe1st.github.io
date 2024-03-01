@@ -1,0 +1,12 @@
+{
+  "name": "Potato Platformer",
+  "short_name": "Potato Platformer",
+  "id": "com.datflopper.potatoplatform",
+  "description": "Explore millions of.... okay, cut this out, yeah a generic platformer game!",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
